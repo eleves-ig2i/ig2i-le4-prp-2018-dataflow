@@ -1,0 +1,33 @@
+#school {
+  min-height: 720px;
+  position: relative;
+  color: white;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Myriad Pro", "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+#row-school{
+  position: absolute;
+  margin: 15%;
+  margin-top: 8%;
+  padding: 7%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  background-color: rgba(52, 188, 255, 0.6);
+  border-radius: 5px;
+}
+#title-school {
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+#text-school {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 180%;
+}
+.play_btn {
+  cursor: pointer;
+}
+.play_btn:hover {
+  text-shadow: 2px 2px 4px #000000;
+}

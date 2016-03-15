@@ -5,6 +5,8 @@
     <title>Innowave</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="parallax.js-1.4.2/parallax.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-school.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <style media="screen">
     body {
@@ -14,7 +16,6 @@
     .header {
       background-color: white;
       height: 10vh;
-      position: fixed;
       width: 100%;
       top: 0px;
       z-index: 2;
@@ -30,9 +31,6 @@
     }
     #about-us {
       background-color: green;
-    }
-    #school {
-      background-color: gray;
     }
     #contact-us {
       background-color: black;
@@ -55,9 +53,24 @@
       <div class="module" id="about-us">
 
       </div>
-      <div class="module" id="school">
 
+      <div class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
+        <div id="row-school">
+          <h2 id= "title-school">
+            Notre école
+          </h2>
+          <p id = "text-school">
+              Depuis 1992, l’Institut de Génie Informatique et Industriel est une formation de Centrale Lille spécialisée dans les techniques
+              de l’informatique et du Génie Industriel. La formation en cinq ans proposée par l’IG2I a pour vocation de former ses futurs
+              ingénieurs à répondre parfaitement aux besoins des entreprises, cela grâce aux 20 mois de stages intelligemment répartis au
+              cours des cinq années du cursus, et également grâce à la réalisation de projets en relation directe avec des entreprises.
+              Elle permet à ses étudiants d’acquérir de précieuses expériences associées à un regard neuf qui ne pourront être que bénéfiques
+              à leurs futures entreprises.
+          </p>
+          <i class="fa fa-play-circle fa-4x play_btn"></i>
+        </div>
       </div>
+
       <div class="module" id="contact-us">
 
       </div>
