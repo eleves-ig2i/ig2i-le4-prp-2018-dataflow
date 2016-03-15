@@ -2,25 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Innowave</title>
+    <title>InnoWave</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="parallax.js-1.4.2/parallax.js"></script>
-    <script src="js/3d-animation.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/parallax.js-1.4.2/parallax.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/style-school.css">
     <link rel="stylesheet" type="text/css" href="css/style-services.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   </head>
   <style media="screen">
     body {
       height: 100%;
       width: 100%;
-    }
-    .header {
-      background-color: white;
-      height: 10vh;
-      width: 100%;
-      top: 0px;
-      z-index: 2;
     }
     .module {
       height: 90vh;
@@ -35,22 +33,64 @@
       background-color: black;
     }
   </style>
-  <body>
-    <div class="header">
-      <ul>
-        <li></li>
-      </ul>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    InnoWave
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project">Projet</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Nos services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about-us">L'équipe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#school">L'école</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-us">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header class="module intro" data-parallax="scroll" data-image-src="pictures/backgroup_pic.jpg">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">InnoWave</h1>
+                        <p class="intro-text">Let's surf your Data.<br>By Centrale Lille - IG2I</p>
+                        <a href="#project" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="module" id="project">
     </div>
 
-    <div class="container">
-      <div class="module" id="banner" data-parallax="scroll" data-image-src="pictures/backgroup_pic.jpg">
-        <canvas id="demo-canvas" width="1000" height="500" style="border:1px solid #000000;">
-        </canvas>
-      </div>
-      <div class="module" id="presentation">
-      </div>
-
-      <div class="module" id="services">
+    <div class="module" id="services">
         <div id="row-services">
           <div class="half">
             <div id = "icon-services">
@@ -89,32 +129,29 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div class="module" id="about-us">
+    <div class="module" id="about-us">
+    </div>
 
-      </div>
-
-      <div class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
-        <div id="row-school">
-          <h2 id= "title-school">
-            Notre école
-          </h2>
-          <p id = "text-school">
+    <div class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
+      <div id="row-school">
+        <h2 id= "title-school">
+          Notre école
+        </h2>
+        <p id = "text-school">
               Depuis 1992, l’Institut de Génie Informatique et Industriel est une formation de Centrale Lille spécialisée dans les techniques
               de l’informatique et du Génie Industriel. La formation en cinq ans proposée par l’IG2I a pour vocation de former ses futurs
               ingénieurs à répondre parfaitement aux besoins des entreprises, cela grâce aux 20 mois de stages intelligemment répartis au
               cours des cinq années du cursus, et également grâce à la réalisation de projets en relation directe avec des entreprises.
               Elle permet à ses étudiants d’acquérir de précieuses expériences associées à un regard neuf qui ne pourront être que bénéfiques
               à leurs futures entreprises.
-          </p>
-          <i class="fa fa-play-circle fa-4x play_btn"></i>
-        </div>
+        </p>
+        <i class="fa fa-play-circle fa-4x play_btn"></i>
       </div>
+    </div>
 
-      <div class="module" id="contact-us">
-
-      </div>
+    <div class="module" id="contact-us">
     </div>
   </body>
 </html>
