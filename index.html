@@ -2,32 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Innowave</title>
+    <title>InnoWave</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="parallax.js-1.4.2/parallax.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style-school.css">
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/parallax.js-1.4.2/parallax.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/style-school.css">
+    <link rel="stylesheet" type="text/css" href="css/style-services.css">
+
   </head>
   <style media="screen">
     body {
       height: 100%;
       width: 100%;
     }
-    .header {
-      background-color: white;
-      height: 10vh;
-      width: 100%;
-      top: 0px;
-      z-index: 2;
-    }
     .module {
       height: 90vh;
     }
     #presentation {
       background-color: red;
-    }
-    #services {
-      background-color: yellow;
     }
     #about-us {
       background-color: green;
@@ -36,44 +33,131 @@
       background-color: black;
     }
   </style>
-  <body>
-    <div class="header">
-      <ul>
-        <li></li>
-      </ul>
-    </div>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <div class="container">
-      <div class="module" id="presentation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    InnoWave
+                </a>
+            </div>
 
-      </div>
-      <div class="module" id="services">
-
-      </div>
-      <div class="module" id="about-us">
-
-      </div>
-
-      <div class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
-        <div id="row-school">
-          <h2 id= "title-school">
-            Notre école
-          </h2>
-          <p id = "text-school">
-              Depuis 1992, l’Institut de Génie Informatique et Industriel est une formation de Centrale Lille spécialisée dans les techniques
-              de l’informatique et du Génie Industriel. La formation en cinq ans proposée par l’IG2I a pour vocation de former ses futurs
-              ingénieurs à répondre parfaitement aux besoins des entreprises, cela grâce aux 20 mois de stages intelligemment répartis au
-              cours des cinq années du cursus, et également grâce à la réalisation de projets en relation directe avec des entreprises.
-              Elle permet à ses étudiants d’acquérir de précieuses expériences associées à un regard neuf qui ne pourront être que bénéfiques
-              à leurs futures entreprises.
-          </p>
-          <i class="fa fa-play-circle fa-4x play_btn"></i>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project">Projet</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Nos services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about-us">L'équipe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#school">L'école</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-us">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </div>
+        <!-- /.container -->
+    </nav>
 
-      <div class="module" id="contact-us">
+    <header class="module intro" data-parallax="scroll" data-image-src="pictures/backgroup_pic.jpg">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">InnoWave</h1>
+                        <p class="intro-text">Let's surf your Data<br>By Centrale Lille - IG2I</p>
+                        <a href="#project" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section class="module" id="project">
+    </section>
+
+    <section class="module" id="services">
+        <div id="row-services">
+          <div class="half">
+            <div id = "icon-services">
+              <img class= "" src="pictures/machineLearning.png" alt="machine learning">
+            </div>
+            <div id = "text-services">
+              <h2 id = "title-services">Machine Learning</h2>
+              Nous pouvons rendre votre système informatique évolutif et capable de prendre des décisions pilotées par vos données.
+            </div>
+          </div>
+          <div class="half">
+            <div id = "icon-services">
+                <img src="pictures/deepLearning.png" alt="deap learning">
+            </div>
+            <div id = "text-services">
+              <h2 id = "title-services">Deep Learning</h2>
+              Notre objectif est d’utiliser des méthodes et algorithmes performants pour créer un réseau de neurones artificiels au sein de votre système.
+            </div>
+          </div>
+          <div class="half">
+            <div id = "icon-services">
+              <img class= "" src="pictures/dataMining.png" alt="Data Mining">
+            </div>
+            <div id = "text-services">
+              <h2 id = "title-services">Data Mining</h2>
+              Notre mission est d’explorer et analyser vos données afin de trouver les pépites cachées dans vos bases de données.
+            </div>
+          </div>
+          <div class="half">
+            <div id = "icon-services">
+              <img class= "" src="pictures/bigData.png" alt="Big Data">
+            </div>
+            <div id = "text-services">
+              <h2 id = "title-services">Big Data</h2>
+              Notre intérêt est d’exploiter et de parcourir ces masses de données afin de trouver des corrélations
+              répondant aux besoins de votre entreprise.
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="module" id="about-us">
+    </section>
+
+    <section class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
+      <div id="row-school">
+        <h2 id= "title-school">
+          Notre école
+        </h2>
+        <p id = "text-school">
+              Depuis 1992, l’Institut de Génie Informatique et Industriel est une formation de Centrale Lille spécialisée
+              dans les techniques de l’informatique et du Génie Industriel. La formation en cinq ans proposée par l’IG2I
+              a pour vocation de former ses futurs ingénieurs à répondre parfaitement aux besoins des entreprises, cela
+              grâce aux 20 mois de stages intelligemment répartis au cours des cinq années du cursus, et également grâce
+              à la réalisation de projets en relation directe avec des entreprises. Elle permet à ses étudiants d’acquérir
+              de précieuses expériences associées à un regard neuf qui ne pourront être que bénéfiques à leurs futures entreprises.
+        </p>
+        <a href="https://vimeo.com/20101076" target="_blank">
+            <i class="fa fa-play-circle fa-4x play_btn"></i>
+        </a>
       </div>
-    </div>
+    </section>
+
+    <section class="module" id="contact-us">
+    </section>
+
+    <footer>
+    </footer>
   </body>
 </html>
