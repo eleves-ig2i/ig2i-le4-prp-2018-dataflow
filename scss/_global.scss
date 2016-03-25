@@ -1,0 +1,27 @@
+body {
+  height: 100%;
+  width: 100%;
+
+  .header {
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+  }
+  .module {
+    height: 90vh;
+  }
+  #presentation {
+    background-color: red;
+  }
+  #services {
+    background-color: yellow;
+  }
+  #about-us {
+    background-color: green;
+  }
+  #contact-us {
+    background-color: black;
+  }
+}
