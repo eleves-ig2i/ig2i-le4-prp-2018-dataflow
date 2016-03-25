@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Galaxie';
+  font-weight: normal;
+  src: url('');
+}
+
+@font-face {
+  font-family: 'GT Pressura';
+  src: url('');
+}
+
+$galaxie: 'Calibre', arial, sans-serif;
+$pressura-light: 'Calibre SemiBold', arial, sans-serif;
+
+%h1 {
+  font-family: $galaxie;
+  font-size: 22px;
+  line-height: 30px;
+
+  @include breakpoint(tablet) {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+%h2 {
+  font-family: $galaxie;
+  font-size: 16px;
+  line-height: 24px;
+
+  @include breakpoint(tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+}
+
+%h3 {
+  font-family: $pressura-light;
+  font-size: 13px;
+  letter-spacing: .5px;
+  line-height: 18px;
+}
+
+%description {
+  font-family: $galaxie;
+  font-size: 14px;
+  letter-spacing: .2px;
+  line-height: 24px;
+
+  @include breakpoint(desktop) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+%t2 {
+  font-family: $galaxie;
+  font-size: 13px;
+  letter-spacing: .2px;
+  line-height: 22px;
+}
+
+%t3 {
+  font-family: $galaxie;
+  font-size: 12px;
+  letter-spacing: .2px;
+  line-height: 22px;
+}

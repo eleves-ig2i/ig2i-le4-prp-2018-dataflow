@@ -1,0 +1,62 @@
+// Breakpoints
+$small: 	960px;
+$medium: 	1024px;
+$large: 	1280px;
+$max: 	  1440px;
+
+@mixin breakpoint($point) {
+  @if $point == xlarge {
+    @media (min-width: $xlarge) { @content; }
+  }
+  @if $point == large {
+    @media (min-width: $large) { @content; }
+  }
+  @if $point == desktop {
+    @media (min-width: $medium) { @content; }
+  }
+
+  @if $point == mobile {
+    @media (max-width: $small - 1)  { @content; }
+  }
+
+  // tablet
+  @if $point == tablet {
+    @media (min-width: $small) { @content; }
+  }
+  @if $point == tabletPortrait {
+    @media (min-width: $small) and (max-width: $medium) and (orientation:portrait) { @content; }
+  }
+  @if $point == tabletLandscape {
+    @media (min-width: $small) and (max-width: $medium) and (orientation:landscape) { @content; }
+  }
+}
+
+@mixin transition($properties...) {
+  -moz-transition:    $properties;
+  -webkit-transition: $properties;
+  -o-transition:      $properties;
+  transition:         $properties;
+}
+
+@mixin transform($transforms...) {
+  -moz-transform:    $transforms;
+  -o-transform:      $transforms;
+  -ms-transform:     $transforms;
+  -webkit-transform: $transforms;
+  transform:         $transforms;
+}
+
+// Colors
+$white:         #fff;
+$black:         #000;
+$gray:          #333;
+$darkgray: 	    #979797;
+$off-yellow:    #eee7d1;
+$off-orange:    #f5f2ea;
+$dark-orange:   #8b735c;
+$light-orange:  #fef8e6;
+
+
+$hover:         #e0e0e0;
+$button-hover:  #79644e;
+$icon-color:    #ff7e72;
