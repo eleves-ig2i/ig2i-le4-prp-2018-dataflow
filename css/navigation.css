@@ -72,7 +72,9 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
     color: #fff;
 }
-
+.intro-body {
+    background: rgba(51, 122, 183, 0.35);
+}
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -97,7 +99,8 @@ a:focus {
         padding: 100px 0;
         text-align: center;
         color: #fff;
-        background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+        /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+        background: rgba(51, 122, 183, 0.35);
         background-color: #000;
         -webkit-background-size: cover;
         -moz-background-size: cover;
