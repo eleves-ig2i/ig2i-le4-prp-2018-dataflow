@@ -20,6 +20,10 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('.member').hover(function(){
+      $(this).find('.member-description').fadeIn();
+    })
 });
 
 // Closes the Responsive Menu on Menu Item Click

@@ -1,3 +1,10 @@
+@import url(style-school.css);
+@import url(style-services.css);
+@import url(style-services.css);
+@import url(style-about-us.css);
+
+
+
 /*intro + navigation CSS */
 a {
     color: #42dca3;

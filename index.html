@@ -15,17 +15,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/style-school.css">
-    <link rel="stylesheet" type="text/css" href="css/style-services.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+
+
 
   </head>
+  <style media="screen">
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  .module {
+    height: 90vh;
+  }
+  #project {
+    background-color: rgba(51, 122, 183, 0.35);
+  }
+  #presentation {
+    background-color: red;
+  }
+  #contact-us {
+    background-color: black;
+  }
+
+  .clearfix {
+    overflow: auto!important;
+    zoom: 1!important;
+  }
+</style>
 
   <body>
-    <div class="header">
-      <ul>
-        <li></li>
-      </ul>
-    </div>
 
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -64,8 +85,9 @@
     </nav>
 
     <header class="module intro" data-parallax="scroll" data-image-src="pictures/backgroup_pic.jpg">
+      <div id="particles-js" style="position: absolute; width: 100%; height: 90vh;"></div>
         <div class="intro-body">
-          <div id="particles-js" style="position: absolute; width: 100%; height: 400px;"></div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
@@ -79,8 +101,39 @@
             </div>
         </div>
     </header>
+    <style media="screen">
+      #project {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height: 90vh;
 
-    <section class="module" id="project">
+      }
+      .project-container {
+        width: 70%;
+        text-align: center;
+        margin: 120px auto;
+        border-radius: 15px;
+        background-color: white;
+        padding: 50px;
+      }
+      .project-title {
+        padding-bottom: 50px;
+      }
+    </style>
+
+    <section class="" id="project">
+      <div class="project-container clearfix">
+        <h1 class="project-title">Le projet</h1>
+        <h4>
+          Le projet que nous vous proposons est une étude tout d’abord théorique de 960h comprenant la réalisation d’un cahier des charges détaillé, un dossier de spécification fonctionnelle, un plan qualité et une méthodologie de conduite de projet. Cette étude s'effectuera au lors du premier semestre de l’année scolaire 2016 - 2017 de début septembre à fin janvier.
+          </br>
+          </br></br>
+
+          Cette étude pourra donner lieu à un deuxième projet technique de 110h/personne (880h au total) impliquant la réalisation complète ou partielle en fonction de la complexité et du nombre d’heures nécessaires et une conception technique détaillée.
+        </h4>
+      </div>
     </section>
 
     <section class="module" id="services">
@@ -124,8 +177,42 @@
           </div>
         </div>
     </section>
-
-    <section class="module" id="about-us">
+    <section class="" id="about-us">
+      <div class="us-container clearfix">
+        <h3>L'équipe</h3>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+        <div class="member">
+          <img class="shake-chunk" src="pictures/mathieu.png" alt="" />
+          <div class="member-description">Je suis gay</div>
+        </div>
+      </div>
     </section>
 
     <section class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
@@ -146,8 +233,44 @@
         </a>
       </div>
     </section>
-
-    <section class="module" id="contact-us">
+    <style media="screen">
+    #contact-us {
+      text-align: center;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+      padding: 50px;
+    }
+      .contact-container {
+        text-align: center;
+      }
+      .fa-4 {
+        font-size: 70px;
+        padding: 0 20px;
+      }
+      .contact-container a {
+        display: inline-block;
+      }
+    </style>
+    <section class="" id="contact-us">
+      <div class="contact-container clearfix">
+        <h2>Contactez nous!</h2>
+        <a href="mailto:innowave@ec-lille.fr">
+          <i class="fa fa-envelope-o fa-4 shake-slow"></i>
+        </a>
+        <a href="mailto:innowave@ec-lille.fr">
+          <i class="fa fa-4 fa-github-alt shake-slow"></i>
+        </a>
+        <a href="mailto:innowave@ec-lille.fr">
+          <i class="fa fa-4 fa-google-plus shake-slow"></i>
+        </a>
+        <a href="mailto:innowave@ec-lille.fr">
+          <i class="fa fa-4 fa-facebook-official shake-slow"></i>
+        </a>
+        <a href="mailto:innowave@ec-lille.fr">
+          <i class="fa fa-4 fa-twitter shake-slow"></i>
+        </a>
+      </div>
     </section>
 
     <footer>
