@@ -11,7 +11,7 @@
   width: 128px;
 }
 a {
-    color: #42dca3;
+    color: #46e1fd;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -101,7 +101,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #202a59;
+        background: rgb(1, 43, 90);
     }
 
     .intro {
