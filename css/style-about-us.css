@@ -1,5 +1,5 @@
 #about-us {
-  background-color: rgba(51, 122, 183, 0.35);
+  background-color: #202a59;
 }
 
 .us-container {
@@ -22,10 +22,10 @@
 .member-description {
 
   background-color: #6e7f8f;
-  height: 55px;
+  height: 40px;
   color: white;
   position: relative;
   width: 100%;
-  top: -55px;
+  top: -40px;
   padding: 10px;
 }
