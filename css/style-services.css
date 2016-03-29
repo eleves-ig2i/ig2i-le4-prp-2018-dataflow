@@ -1,8 +1,9 @@
 #services {
-  background-color: #6e7f8f;
+  background-color: #efefef;
+  border-bottom: 1px solid #cccccc;
   min-height: 520px;
   position: relative;
-  color: white;
+  color: #5b5b5b;
   font-family: "Source Sans Pro", "Helvetica Neue", "Myriad Pro", "Trebuchet MS", sans-serif;
 }
 .half {
@@ -22,10 +23,11 @@
 }
 #title-services {
   font-weight: 500;
+  color: rgb(1, 43, 90);
 }
 #text-services {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 160%;
   width: 70%;
   float: left;

@@ -4,6 +4,11 @@
   color: white;
   font-family: "Source Sans Pro", "Helvetica Neue", "Myriad Pro", "Trebuchet MS", sans-serif;
   text-align: center;
+  background: url("../pictures/blur-ig2i.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #row-school{
   position: absolute;
@@ -22,7 +27,7 @@
 }
 #text-school {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 180%;
 }
 .play_btn {

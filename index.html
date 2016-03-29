@@ -37,7 +37,8 @@
     background-color: #202a59;
   }
   #contact-us {
-    background-color: #202a59;
+    background-color: #373f47;
+    color: white
   }
 
   .clearfix {
@@ -85,7 +86,7 @@
     </nav>
 
     <header class="module intro" data-parallax="scroll" data-image-src="pictures/backgroup_pic.jpg">
-      <div id="particles-js" style="position: absolute; width: 100%; height: 90vh; background-image: radial-gradient(circle farthest-corner at 50% 0%, #202a59 , #0033A5 );"></div>
+      <div id="particles-js" style="position: absolute; width: 100%; height: 90vh; background-image:radial-gradient(circle farthest-corner at 50% 0%, #30b9ff , #0033A5 );"></div>
         <div class="intro-body">
 
             <div class="container">
@@ -103,53 +104,70 @@
     </header>
     <style media="screen">
       #project {
+        font-size: 18px;
+        border-bottom: 1px solid #cccccc;
+        font-weight: 400;
+        line-height: 180%;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
-        text-align: center;
+        text-align: left;;
         height: 90vh;
-
+        background-color: #f9f9f9;
+        color: #5b5b5b;
       }
       .project-container {
         width: 80%;
         text-align: center;
-        margin: 120px auto;
-
-        color: white;
+        margin: 60px auto;
         padding: 30px;
         font-family: "Source Sans Pro", "Helvetica Neue", "Myriad Pro", "Trebuchet MS", sans-serif;
       }
-
+      #text-project-one{
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+      }
       #project h4 {
         font-family: "Source Sans Pro", "Helvetica Neue", "Myriad Pro", "Trebuchet MS", sans-serif;
         font-weight: 200;
+      }
+      #title-project {
+        font-weight: 500;
+        color: #30b9ff;
       }
     </style>
 
     <section class="" id="project">
       <div class="project-container clearfix">
-        <i class="fa fa-desktop fa-4" style="display:inline-block; height: 50px;vertical-align: top;margin-top: 50px;margin-right: 40px;"></i>
-        <div class="project-text" style="display:inline-block;width:60%;">
-          <h2 style="text-align:left;">Le projet</h2>
-          <h4 style="text-align:left;">
-            Le projet que nous vous proposons est une étude tout d’abord théorique de 960h comprenant la réalisation d’un cahier des charges détaillé, un dossier de spécification fonctionnelle, un plan qualité et une méthodologie de conduite de projet. Cette étude s'effectuera au lors du premier semestre de l’année scolaire 2016 - 2017 de début septembre à fin janvier.
-          </h4>
+        <h4>
+        <div id="text-project-one">
+          Innowave est une équipe de 8 élèves  ingénieurs en fin de cycle de la formation IG2I
+          (Institut de Génie Informatique et Industriel) de Centrale Lille, passionnés par les technologies
+          de l’information innovantes et les problématiques liées à l’afflux des données et à leurs traitements.
         </div>
-
-          </br>
-          </br>
-
-          <i class="fa fa-desktop fa-4" style="display:inline-block; height: 50px;vertical-align: top;margin-top: 50px;margin-right: 40px;"></i>
-          <div class="project-text" style="display:inline-block;width:60%;">
-            <h2 style="text-align:left;">La suite...</h2>
-            <h4 style="text-align:left;">
-              Cette étude pourra donner lieu à un deuxième projet technique de 110h/personne (880h au total) impliquant la réalisation complète ou partielle en fonction de la complexité et du nombre d’heures nécessaires et une conception technique détaillée.
-            </h4>
-          </div>
+        </br>
+        <hr>
+        </br>
+        <h2 id = "title-project">Un projet autour des données de votre entreprise</h2>
+        <div>
+          Le projet que nous vous proposons est une étude tout d’abord théorique de 120h/personne (soit 960h au total)
+          comprenant la réalisation d’un cahier des charges détaillé, un dossier de spécifications fonctionnelles,
+          un plan qualité et une méthodologie de conduite de projet. Cette étude s'effectuera lors
+          du premier semestre de l’année scolaire 2016 - 2017 de début septembre à fin janvier.
+        </div>
+        </br>
+				<h2 id = "title-project">Une deuxième phase peut être envisageable ...</h2>
+        <div>
+          Cette étude pourra donner lieu à un deuxième projet technique de 110h/personne (880h au total)
+          impliquant la conception technique détaillée et la réalisation complète, ou partielle, en fonction de la
+          complexité et du nombre d’heures nécessaires.
+        </div>
+        </h4>
       </div>
     </section>
 
-    <section class="modules" id="services">
+    <section class="" id="services">
         <div id="row-services">
           <div class="half">
             <div id = "icon-services">
@@ -171,7 +189,7 @@
           </div>
           <div class="half">
             <div id = "icon-services">
-              <img class= "" src="pictures/dataMining.png" alt="Data Mining">
+              <img class= "" src="pictures/dataMining.png" alt="Data Mining" style="width: 70px; height: 80px;">
             </div>
             <div id = "text-services">
               <h2 id = "title-services">Data Mining</h2>
@@ -227,7 +245,7 @@
       </div>
     </section>
 
-    <section class="module" id="school" data-parallax="scroll" data-image-src="pictures/blur-ig2i.jpg">
+    <section class="module" id="school">
       <div id="row-school">
         <h2 id= "title-school">
           Notre école
@@ -267,20 +285,8 @@
     <section class="" id="contact-us">
       <div class="contact-container clearfix" style="color:white;">
         <h2 style="color:white;">Contactez nous!</h2>
-        <a href="mailto:innowave@ec-lille.fr" style="color:white;">
+        <a href="mailto:innowave@ec-lille.fr" >
           <i class="fa fa-envelope-o fa-4 shake-slow"></i>
-        </a>
-        <a href="mailto:innowave@ec-lille.fr" style="color:white;">
-          <i class="fa fa-4 fa-github-alt shake-slow"></i>
-        </a>
-        <a href="mailto:innowave@ec-lille.fr" style="color:white;">
-          <i class="fa fa-4 fa-google-plus shake-slow"></i>
-        </a>
-        <a href="mailto:innowave@ec-lille.fr" style="color:white;">
-          <i class="fa fa-4 fa-facebook-official shake-slow"></i>
-        </a>
-        <a href="mailto:innowave@ec-lille.fr" style="color:white;">
-          <i class="fa fa-4 fa-twitter shake-slow"></i>
         </a>
       </div>
     </section>
