@@ -1,7 +1,7 @@
 #about-us {
   background-color: #f9f9f9;
   border-bottom: 1px solid #cccccc;
-  color: rgb(1, 43, 90);
+  color: #009530;
 }
 #title-team{
   font-weight: bold;
@@ -18,9 +18,9 @@
 }
 
 .member {
-  display: inline-block;
+  display: flex;
   text-align: center;
-  width: 24%;
+  width: 32%;
   margin-left: 5px;
 }
 .member img {
@@ -31,9 +31,12 @@
   max-height: 240px;
 }
 
-.member-description {
+.member > div, .member-description {
+	width: 45%;
+}
+.member-name {
   height: 20px;
-  color: rgb(1, 43, 90);
+  color: #009530;
   position: relative;
   width: 100%;
   padding: 0px;
