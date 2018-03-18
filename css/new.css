@@ -10,3 +10,11 @@
 .member-name {
 	margin-bottom: 0.5em;
 }
+
+.member-description p {
+	text-align: justify;
+}
+
+#credits {
+	margin-top: 1em;
+}
