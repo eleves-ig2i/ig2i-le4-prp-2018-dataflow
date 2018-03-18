@@ -32,15 +32,17 @@
   width: 40vw;
 }
 .member img {
-  padding: 10px;
+  padding: 0;
+  margin: 1em;
   width: 90%;
   border-radius: 35px;
   max-width: 246px;
   max-height: 240px;
+  border: solid 2px #009530;
 }
 
 .member > div, .member-description {
-	width: 45%;
+	/*width: 45%;*/
 	/*margin: auto;*/
 	margin-top: auto;
     margin-bottom: auto;

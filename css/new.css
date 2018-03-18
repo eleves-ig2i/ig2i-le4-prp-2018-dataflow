@@ -1,0 +1,38 @@
+.green,
+#title-project {
+	color: #009530 !important;
+}
+
+.member-description {
+	width: 25em !important;
+}
+
+.member-name {
+	margin-bottom: 0.5em;
+}
+
+.member-description p {
+	text-align: justify;
+}
+
+#credits {
+	margin-top: 1em;
+}
+
+#members > * {
+	flex-grow: 1;
+}
+
+#about-us {
+	max-width: 97em;
+	margin: auto;
+}
+
+.member {
+	padding: 0 !important;
+	width: auto !important;
+}
+
+body {
+	background: #f9f9f9 !important;
+}
