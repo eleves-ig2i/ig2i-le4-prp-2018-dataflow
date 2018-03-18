@@ -18,3 +18,21 @@
 #credits {
 	margin-top: 1em;
 }
+
+#members > * {
+	flex-grow: 1;
+}
+
+#about-us {
+	max-width: 97em;
+	margin: auto;
+}
+
+.member {
+	padding: 0 !important;
+	width: auto !important;
+}
+
+body {
+	background: #f9f9f9 !important;
+}

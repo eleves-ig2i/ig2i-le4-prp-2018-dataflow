@@ -1,3 +1,4 @@
+if(0)
 particlesJS('particles-js', {
   "particles": {
     "number": {
