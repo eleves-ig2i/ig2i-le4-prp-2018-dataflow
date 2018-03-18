@@ -6,3 +6,7 @@
 .member-description {
 	width: 25em !important;
 }
+
+.member-name {
+	margin-bottom: 0.5em;
+}
