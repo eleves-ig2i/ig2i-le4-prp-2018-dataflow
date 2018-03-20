@@ -1,5 +1,5 @@
 # PRP Dataflow - 2018
-Site de présentation de l'équipe Dataflow : https://eleves-ig2i.github.io/ig2i-le4-prp-2018-dataflow/
+Site de présentation de l'équipe Dataflow : http://dataflow.ig2i.org/
 
 ## Membres
 - Mika Benoit
